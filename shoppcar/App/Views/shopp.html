@@ -1,0 +1,16 @@
+<shopp
+        index="{{$index}}"
+        users="objs"></shopp>
+
+<div class="qx">
+    <div class="qx-list col-xs-3">
+        <span class="all" ng-class="{on:flag}" ng-click="All()"></span>
+        <span>全选</span>
+    </div>
+    <div class="col-xs-3">
+        总价：<span>{{sum}}</span>
+    </div>
+    <div class="col-xs-6  bg-danger text-center">
+        结算（{{num}}）
+    </div>
+</div>

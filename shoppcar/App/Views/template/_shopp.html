@@ -1,0 +1,24 @@
+<div class="list" ng-repeat="obj in objs " index="{$index}">
+    <div class="list-left col-xs-2">
+        <span class="ck"
+              ng-class="{on:obj.state}"
+              ng-click="ck($index)"></span>
+    </div>
+    <div class="col-xs-2">
+        <img src="{{obj.img}}" alt="" class="mt15">
+    </div>
+    <div class="nr col-xs-4 text-center">
+        <p class="mt15">
+            {{obj.text}}
+        </p>
+    </div>
+    <div class="list-content col-xs-2">
+
+        <span  ng-click="itemCount($index,'-')">-</span>
+        <b>{{obj.num}}</b>
+        <span  ng-click="itemCount($index,'+')">+</span>
+    </div>
+    <div class="list-right col-xs-2">
+        <span class="del"ng-click="del($index)">删除</span>
+    </div>
+</div>
